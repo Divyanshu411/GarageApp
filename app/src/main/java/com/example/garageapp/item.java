@@ -1,10 +1,10 @@
 package com.example.garageapp;
 
 public class item {
-    String name, price;
-    int make,  image;
+    String name, price, make;
+    int image;
 
-    public item(String name, int make, String price, int image) {
+    public item(String name, String make, String price, int image) {
         this.name = name;
         this.make = make;
         this.price = price;
@@ -19,7 +19,7 @@ public class item {
         return price;
     }
 
-    public int getMake() {
+    public String getMake() {
         return make;
     }
 
