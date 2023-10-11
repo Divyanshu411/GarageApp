@@ -16,7 +16,7 @@
             android:name=".carActivity2"
             android:exported="false" />
         <activity
-            android:name=".carsActivity"
+            android:name=".carActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

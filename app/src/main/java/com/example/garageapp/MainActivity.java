@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
         Btn = findViewById(R.id.startBtn);
         Btn.setOnClickListener(view -> {
-            Intent Btn = new Intent(MainActivity.this, carsActivity.class);
+            Intent Btn = new Intent(MainActivity.this, carActivity.class);
             startActivity(Btn);
         });
     }

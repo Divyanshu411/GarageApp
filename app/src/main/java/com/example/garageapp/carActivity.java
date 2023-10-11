@@ -7,13 +7,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class carsActivity extends AppCompatActivity implements RecyclerViewInterface{
-    carAdapter adapterCar;
+public class carActivity extends AppCompatActivity implements RecyclerViewInterface{
+    FloatingActionButton fab_home1;
     private List<item> carList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,10 +42,20 @@ public class carsActivity extends AppCompatActivity implements RecyclerViewInter
     @Override
     public void onItemClick(int position) {
         item clickedItem = carList.get(position);
-        Intent intent = new Intent(carsActivity.this, carActivity2.class);
+        Intent intent = new Intent(carActivity.this, carActivity2.class);
 
         intent.putExtra("clicked_item", clickedItem);
 
         startActivity(intent);
+
+        //Floating button - Home
+        fab_home1 = findViewById(R.id.fab_home1);
+        fab_home1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(carActivity.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
