@@ -11,7 +11,7 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginBottom="64dp"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,19 +31,19 @@
             android:id="@+id/rdb_car"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Cars" />
+            android:text="@string/cars" />
 
         <RadioButton
             android:id="@+id/rdb_bike"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Bikes" />
+            android:text="@string/bikes" />
 
         <RadioButton
             android:id="@+id/rdb_others"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Others" />
+            android:text="@string/others" />
     </RadioGroup>
 
     <TextView
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="94dp"
-        android:text="Choose an option"
+        android:text="@string/choose_an_option"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:layout_marginBottom="133dp"
-        android:text="Welcome to the Garage App"
+        android:text="@string/welcome_to_the_garage_app"
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"

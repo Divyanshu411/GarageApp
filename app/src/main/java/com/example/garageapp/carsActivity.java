@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class carsActivity extends AppCompatActivity{
-
+public class carsActivity extends AppCompatActivity implements RecyclerViewInterface{
+    carAdapter adapterCar;
+    private List<item> carList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +22,7 @@ public class carsActivity extends AppCompatActivity{
 
         RecyclerView rv = findViewById(R.id.carRecyclerView);
 
-        List<item> carList = new ArrayList<>();
+        carList = new ArrayList<>();
         carList.add(new item("Audi Q5", "2023", "€45,000", R.drawable.j));
         carList.add(new item("BMW 3 Series", "2019", "€40,000", R.drawable.g));
         carList.add(new item("Chevrolet Silverado", "2020", "€30,000", R.drawable.d));
@@ -31,6 +35,16 @@ public class carsActivity extends AppCompatActivity{
         carList.add(new item("Volkswagen Golf", "2023", "€23,000", R.drawable.f));
 
         rv.setLayoutManager(new LinearLayoutManager(this));
-        rv.setAdapter(new carAdapter(getApplicationContext(), carList));
+        rv.setAdapter(new carAdapter(getApplicationContext(), carList, this));
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        item clickedItem = carList.get(position);
+        Intent intent = new Intent(carsActivity.this, carActivity2.class);
+
+        intent.putExtra("clicked_item", clickedItem);
+
+        startActivity(intent);
     }
 }

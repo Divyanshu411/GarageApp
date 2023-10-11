@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">GarageApp</string>
+    <string name="start">Start</string>
+    <string name="cars">Cars</string>
+    <string name="bikes">Bikes</string>
+    <string name="others">Others</string>
+    <string name="choose_an_option">Choose an option</string>
+    <string name="welcome_to_the_garage_app">Welcome to the Garage App</string>
+    <string name="name">Name</string>
+    <string name="year">Year</string>
+    <string name="price">Price</string>
+    <string name="car_image_displayed">Car Image displayed</string>
+    <string name="honebutton">honeButton</string>
+    <string name="gotoads">gotoads</string>
+    <string name="goback">goback</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_car3">carActivity3</string>
+    <string name="title_activity_car_navigation">carNavigation</string>
 </resources>

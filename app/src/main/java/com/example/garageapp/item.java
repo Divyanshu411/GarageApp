@@ -1,6 +1,8 @@
 package com.example.garageapp;
 
-public class item {
+import java.io.Serializable;
+
+public class item implements Serializable {
     String name, price, make;
     int image;
 
