@@ -14,8 +14,7 @@ import java.util.List;
 
 public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHolder>{
     Context context;
-    private List<Item> carList;
-    private ItemClickListener mClickListener;
+    private final List<Item> carList;
     private final RecyclerViewInterface recyclerViewInterface;
 
     //Constructor
@@ -24,13 +23,6 @@ public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHold
         this.carList = carList;
         this.recyclerViewInterface = recyclerViewInterface;
 
-    }
-    public interface ItemClickListener{
-        void onItemClick(View view, int position);
-    }
-
-    void setClickListener(ItemClickListener itemClickListener){
-        this.mClickListener = itemClickListener;
     }
 
     @NonNull
@@ -74,14 +66,11 @@ public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHold
             priceView = itemView.findViewById(R.id.price);
             makeView = itemView.findViewById(R.id.make);
 
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if(recyclerViewInterface != null){
-                        int pos = getAdapterPosition();
-                        if (pos != RecyclerView.NO_POSITION){
-                            recyclerViewInterface.onItemClick(pos);
-                        }
+            itemView.setOnClickListener(view -> {
+                if(recyclerViewInterface != null){
+                    int pos = getAbsoluteAdapterPosition();
+                    if (pos != RecyclerView.NO_POSITION){
+                        recyclerViewInterface.onItemClick(pos);
                     }
                 }
             });

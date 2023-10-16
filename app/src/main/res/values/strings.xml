@@ -173,4 +173,6 @@
     <string name="saddle_year">2022</string>
     <string name="saddle_price">25 euro</string>
     <string name="saddle_image">p10</string>
+    <string name="itemName">Name</string>
+    <string name="itemimage">ItemImage</string>
 </resources>
