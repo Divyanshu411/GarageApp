@@ -13,10 +13,13 @@
         android:theme="@style/Theme.GarageApp"
         tools:targetApi="31">
         <activity
-            android:name=".carActivity2"
+            android:name=".MainActivity2"
             android:exported="false" />
         <activity
-            android:name=".carActivity"
+            android:name=".displayVehicleActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".displayVehicleActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -13,6 +13,7 @@
     <string name="honebutton">honeButton</string>
     <string name="gotoads">gotoads</string>
     <string name="goback">goback</string>
+    <string name="gohome">gohome</string>
     <string name="title_activity_navigation">navigation</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

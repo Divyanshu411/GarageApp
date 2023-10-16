@@ -1,6 +1,5 @@
 package com.example.garageapp;
 
-import android.content.ClipData;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,14 +12,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class carAdapter extends RecyclerView.Adapter<carAdapter.ViewHolder>{
+public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHolder>{
     Context context;
     private List<item> carList;
     private ItemClickListener mClickListener;
     private final RecyclerViewInterface recyclerViewInterface;
 
     //Constructor
-    public carAdapter(Context context, List<item> carList, RecyclerViewInterface recyclerViewInterface) {
+    public vehicleAdapter(Context context, List<item> carList, RecyclerViewInterface recyclerViewInterface) {
         this.context = context;
         this.carList = carList;
         this.recyclerViewInterface = recyclerViewInterface;
@@ -36,7 +35,7 @@ public class carAdapter extends RecyclerView.Adapter<carAdapter.ViewHolder>{
 
     @NonNull
     @Override
-    public carAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public vehicleAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.row_layout,parent,false);
         return new ViewHolder(view, recyclerViewInterface);
     }
@@ -44,7 +43,7 @@ public class carAdapter extends RecyclerView.Adapter<carAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.nameView.setText(carList.get(position).getName());
         holder.priceView.setText(carList.get(position).getPrice());
-        holder.makeView.setText(carList.get(position).getMake());
+        holder.makeView.setText(carList.get(position).getYear());
         holder.imageView.setImageResource(carList.get(position).getImage());
     }
 
@@ -57,7 +56,7 @@ public class carAdapter extends RecyclerView.Adapter<carAdapter.ViewHolder>{
         if (id >= 0 && id < carList.size()) {
             item car = carList.get(id);
             return "Car Name: " + car.getName() +
-                    "\nYear: " + car.getMake() +
+                    "\nYear: " + car.getYear() +
                     "\nPrice: " + car.getPrice() +
                     "\nImage Resource ID: " + car.getImage();
         } else {

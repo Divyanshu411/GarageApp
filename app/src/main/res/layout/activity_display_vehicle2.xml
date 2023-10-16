@@ -7,25 +7,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".carActivity2">
+    tools:context=".displayVehicleActivity2">
 
     <TextView
-        android:id="@+id/carNameView"
+        android:id="@+id/itemNameView"
         android:layout_width="347dp"
         android:layout_height="44dp"
         android:gravity="center"
-        android:text="@string/name"
+        android:text="Name"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carImageView"
+        app:layout_constraintTop_toBottomOf="@+id/itemImageView"
         app:layout_constraintVertical_bias="0.132" />
 
     <ImageView
-        android:id="@+id/carImageView"
+        android:id="@+id/itemImageView"
         android:layout_width="412dp"
         android:layout_height="309dp"
 
@@ -39,7 +39,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/carYearView"
+        android:id="@+id/itemYearView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/year"
@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.744" />
 
     <TextView
-        android:id="@+id/carPriceView"
+        android:id="@+id/itemPriceView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/price"

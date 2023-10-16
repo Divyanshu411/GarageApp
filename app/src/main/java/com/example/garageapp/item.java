@@ -3,12 +3,12 @@ package com.example.garageapp;
 import java.io.Serializable;
 
 public class item implements Serializable {
-    String name, price, make;
+    String name, price, year;
     int image;
 
     public item(String name, String make, String price, int image) {
         this.name = name;
-        this.make = make;
+        this.year = make;
         this.price = price;
         this.image = image;
     }
@@ -21,8 +21,8 @@ public class item implements Serializable {
         return price;
     }
 
-    public String getMake() {
-        return make;
+    public String getYear() {
+        return year;
     }
 
     public int getImage() {

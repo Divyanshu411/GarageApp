@@ -10,51 +10,45 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class carActivity2 extends AppCompatActivity {
+public class displayVehicleActivity2 extends AppCompatActivity {
     FloatingActionButton fab_back, fab_home;
 
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_car2);
+        setContentView(R.layout.activity_display_vehicle2);
 
         item clickedItem = (item) getIntent().getSerializableExtra("clicked_item");
 
-        String carName = clickedItem.getName();
-        String carYear = clickedItem.getMake();
-        String carPrice = clickedItem.getPrice();
-        int carImage = clickedItem.getImage();
+        String itemName = clickedItem.getName();
+        String itemYear = clickedItem.getYear();
+        String itemPrice = clickedItem.getPrice();
+        int itemImage = clickedItem.getImage();
 
-        TextView carNameView = findViewById(R.id.carNameView);
-        TextView carYearView = findViewById(R.id.carYearView);
-        TextView carPriceView = findViewById(R.id.carPriceView);
-        ImageView carImageView = findViewById(R.id.carImageView);
+        TextView itemNameView = findViewById(R.id.itemNameView);
+        TextView itemYearView = findViewById(R.id.itemYearView);
+        TextView itemPriceView = findViewById(R.id.itemPriceView);
+        ImageView itemImageView = findViewById(R.id.itemImageView);
 
-        carNameView.setText(carName);
-        carYearView.setText(carYear);
-        carPriceView.setText(carPrice);
-        carImageView.setImageResource(carImage);
+        itemNameView.setText(itemName);
+        itemYearView.setText(itemYear);
+        itemPriceView.setText(itemPrice);
+        itemImageView.setImageResource(itemImage);
 
         //Floating button - Back
         fab_back = findViewById(R.id.fab_back);
-        fab_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+        fab_back.setOnClickListener(v -> finish());
 
         //Floating button - Home
         fab_home = findViewById(R.id.fab_home);
         fab_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(carActivity2.this, MainActivity.class);
+                Intent intent = new Intent(displayVehicleActivity2.this, MainActivity.class);
                 startActivity(intent);
             }
         });
