@@ -20,4 +20,157 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_car3">carActivity3</string>
     <string name="title_activity_car_navigation">carNavigation</string>
+
+    //Cars
+    <string name="audi_q5">Audi Q5</string>
+    <string name="audi_q5_year">2023</string>
+    <string name="audi_q5_price">€45,000</string>
+    <string name="audi_q5_image">j</string>
+
+    <string name="bmw_3_series">BMW 3 Series</string>
+    <string name="bmw_3_series_year">2019</string>
+    <string name="bmw_3_series_price">€40,000</string>
+    <string name="bmw_3_series_image">g</string>
+
+    <string name="chevrolet_silverado">Chevrolet Silverado</string>
+    <string name="chevrolet_silverado_year">2020</string>
+    <string name="chevrolet_silverado_price">€30,000</string>
+    <string name="chevrolet_silverado_image">d</string>
+
+    <string name="ford_f150_name">Ford F-150</string>
+    <string name="ford_f150_year">2022</string>
+    <string name="ford_f150_price">€30,000</string>
+    <string name="ford_f150_image">b</string>
+
+    <string name="honda_civic_name">Honda Civic</string>
+    <string name="honda_civic_year">2021</string>
+    <string name="honda_civic_price">€22,000</string>
+    <string name="honda_civic_image">c</string>
+
+    <string name="mercedes_e_class_name">Mercedes-Benz E-Class</string>
+    <string name="mercedes_e_class_year">2028</string>
+    <string name="mercedes_e_class_price">€55,000</string>
+    <string name="mercedes_e_class_image">e</string>
+
+    <string name="nissan_rogue_name">Nissan Rogue</string>
+    <string name="nissan_rogue_year">2017</string>
+    <string name="nissan_rogue_price">€25,000</string>
+    <string name="nissan_rogue_image">i</string>
+
+    <string name="tesla_model3_name">Tesla Model 3</string>
+    <string name="tesla_model3_year">2019</string>
+    <string name="tesla_model3_price">€40,000</string>
+    <string name="tesla_model3_image">h</string>
+
+    <string name="toyota_camry_name">Toyota Camry</string>
+    <string name="toyota_camry_year">2020</string>
+    <string name="toyota_camry_price">€25,000</string>
+    <string name="toyota_camry_image">a</string>
+
+    <string name="volkswagen_golf_name">Volkswagen Golf</string>
+    <string name="volkswagen_golf_year">2023</string>
+    <string name="volkswagen_golf_price">€23,000</string>
+    <string name="volkswagen_golf_image">f</string>
+
+    //Bikes
+    <string name="harley_davidson_street_glide_name">Harley-Davidson Street Glide</string>
+    <string name="harley_davidson_street_glide_year">2020</string>
+    <string name="harley_davidson_street_glide_price">€30,000</string>
+    <string name="harley_davidson_street_glide_image">b1</string>
+
+    <string name="bmw_r1250gs_adventure_name">BMW R1250GS Adventure</string>
+    <string name="bmw_r1250gs_adventure_year">2022</string>
+    <string name="bmw_r1250gs_adventure_price">€22,000</string>
+    <string name="bmw_r1250gs_adventure_image">b2</string>
+
+    <string name="ducati_panigale_v4_name">Ducati Panigale V4</string>
+    <string name="ducati_panigale_v4_year">2019</string>
+    <string name="ducati_panigale_v4_price">€28,500</string>
+    <string name="ducati_panigale_v4_image">b3</string>
+
+    <string name="honda_gold_wing_name">Honda Gold Wing</string>
+    <string name="honda_gold_wing_year">2018</string>
+    <string name="honda_gold_wing_price">€28,300</string>
+    <string name="honda_gold_wing_image">b4</string>
+
+    <string name="kawasaki_ninja_zx10r_name">Kawasaki Ninja ZX-10R</string>
+    <string name="kawasaki_ninja_zx10r_year">2021</string>
+    <string name="kawasaki_ninja_zx10r_price">€17,000</string>
+    <string name="kawasaki_ninja_zx10r_image">b5</string>
+
+    <string name="suzuki_hayabusa_name">Suzuki Hayabusa</string>
+    <string name="suzuki_hayabusa_year">2021</string>
+    <string name="suzuki_hayabusa_price">€18,500</string>
+    <string name="suzuki_hayabusa_image">b6</string>
+
+    <string name="yamaha_yzf_r1_name">Yamaha YZF-R1</string>
+    <string name="yamaha_yzf_r1_year">2020</string>
+    <string name="yamaha_yzf_r1_price">€17,700</string>
+    <string name="yamaha_yzf_r1_image">b7</string>
+
+    <string name="triumph_tiger_900_name">Triumph Tiger 900</string>
+    <string name="triumph_tiger_900_year">2023</string>
+    <string name="triumph_tiger_900_price">€14,500</string>
+    <string name="triumph_tiger_900_image">b8</string>
+
+    <string name="ktm_1290_super_duke_r_name">KTM 1290 Super Duke R</string>
+    <string name="ktm_1290_super_duke_r_year">2018</string>
+    <string name="ktm_1290_super_duke_r_price">€19,500</string>
+    <string name="ktm_1290_super_duke_r_image">b9</string>
+
+    <string name="indian_challenger_name">Indian Challenger</string>
+    <string name="indian_challenger_year">2023</string>
+    <string name="indian_challenger_price">€23,000</string>
+    <string name="indian_challenger_image">b10</string>
+
+    //Others
+    <string name="oil_filter_name">Oil Filter</string>
+    <string name="oil_filter_year">2020</string>
+    <string name="oil_filter_price">10 euro</string>
+    <string name="oil_filter_image">p1</string>
+
+    <string name="spark_plugs_name">Spark Plugs</string>
+    <string name="spark_plugs_year">2023</string>
+    <string name="spark_plugs_price">7 euro</string>
+    <string name="spark_plugs_image">p2</string>
+
+    <string name="brake_rotors_name">Brake Rotors</string>
+    <string name="brake_rotors_year">2017</string>
+    <string name="brake_rotors_price">25 euro</string>
+    <string name="brake_rotors_image">p3</string>
+
+    <string name="air_filter_name">Air Filter</string>
+    <string name="air_filter_year">2018</string>
+    <string name="air_filter_price">12 euro</string>
+    <string name="air_filter_image">p4</string>
+
+    <string name="ignition_coil_name">Ignition Coil</string>
+    <string name="ignition_coil_year">2020</string>
+    <string name="ignition_coil_price">15 euro</string>
+    <string name="ignition_coil_image">p5</string>
+
+    <string name="brake_pads_name">Brake Pads</string>
+    <string name="brake_pads_year">2023</string>
+    <string name="brake_pads_price">20 euro</string>
+    <string name="brake_pads_image">p6</string>
+
+    <string name="chain_name">Chain</string>
+    <string name="chain_year">2021</string>
+    <string name="chain_price">15 euro</string>
+    <string name="chain_image">p7</string>
+
+    <string name="tire_tubes_name">Tire Tubes</string>
+    <string name="tire_tubes_year">2022</string>
+    <string name="tire_tubes_price">10 euro</string>
+    <string name="tire_tubes_image">p8</string>
+
+    <string name="pedals_name">Pedals</string>
+    <string name="pedals_year">2019</string>
+    <string name="pedals_price">8 euro</string>
+    <string name="pedals_image">p9</string>
+
+    <string name="saddle_name">Saddle</string>
+    <string name="saddle_year">2022</string>
+    <string name="saddle_price">25 euro</string>
+    <string name="saddle_image">p10</string>
 </resources>
