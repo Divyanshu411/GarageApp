@@ -38,7 +38,8 @@ public class MainActivity extends AppCompatActivity {
                 vehicleType = "Bikes";
             } else if (selectedId == others.getId()) {
                 vehicleType = "Others";
-            }
+            }else
+                vehicleType = "Cars";
 
             Intent intent = new Intent(MainActivity.this, displayVehicleActivity.class);
             intent.putExtra("vehicle_type", vehicleType);

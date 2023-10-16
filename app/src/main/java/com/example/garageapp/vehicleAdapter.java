@@ -14,12 +14,12 @@ import java.util.List;
 
 public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHolder>{
     Context context;
-    private List<item> carList;
+    private List<Item> carList;
     private ItemClickListener mClickListener;
     private final RecyclerViewInterface recyclerViewInterface;
 
     //Constructor
-    public vehicleAdapter(Context context, List<item> carList, RecyclerViewInterface recyclerViewInterface) {
+    public vehicleAdapter(Context context, List<Item> carList, RecyclerViewInterface recyclerViewInterface) {
         this.context = context;
         this.carList = carList;
         this.recyclerViewInterface = recyclerViewInterface;
@@ -54,7 +54,7 @@ public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHold
 
     public String getItem(int id) {
         if (id >= 0 && id < carList.size()) {
-            item car = carList.get(id);
+            Item car = carList.get(id);
             return "Car Name: " + car.getName() +
                     "\nYear: " + car.getYear() +
                     "\nPrice: " + car.getPrice() +

@@ -22,7 +22,7 @@ public class displayVehicleActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_vehicle2);
 
-        item clickedItem = (item) getIntent().getSerializableExtra("clicked_item");
+        Item clickedItem = (Item) getIntent().getSerializableExtra("clicked_item");
 
         String itemName = clickedItem.getName();
         String itemYear = clickedItem.getYear();
