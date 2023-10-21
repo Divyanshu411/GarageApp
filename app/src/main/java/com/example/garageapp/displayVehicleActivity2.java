@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.bumptech.glide.Glide;
 
 public class displayVehicleActivity2 extends AppCompatActivity {
     FloatingActionButton fab_back, fab_home;
@@ -27,7 +28,7 @@ public class displayVehicleActivity2 extends AppCompatActivity {
         String itemName = clickedItem.getName();
         String itemYear = clickedItem.getYear();
         String itemPrice = clickedItem.getPrice();
-        int itemImage = clickedItem.getImage();
+        String itemImageUrl = clickedItem.getImageUrl();
 
         TextView itemNameView = findViewById(R.id.itemNameView);
         TextView itemYearView = findViewById(R.id.itemYearView);
@@ -37,7 +38,12 @@ public class displayVehicleActivity2 extends AppCompatActivity {
         itemNameView.setText(itemName);
         itemYearView.setText(itemYear);
         itemPriceView.setText(itemPrice);
-        itemImageView.setImageResource(itemImage);
+        //itemImageView.setImageResource(itemImage);
+
+        Glide.with(this)
+                .load(itemImageUrl) // Load the image URL
+                .into(itemImageView);
+
 
         //Floating button - Back
         fab_back = findViewById(R.id.fab_back);
@@ -49,10 +55,9 @@ public class displayVehicleActivity2 extends AppCompatActivity {
             Intent intent = new Intent(displayVehicleActivity2.this, MainActivity.class);
             startActivity(intent);
         });
-    }
 
-    public void action_ads(View view){
-        Uri uri_web = Uri.parse("https://www.google.com");
+        //Floating button - Ads
+        Uri uri_web = Uri.parse("");
         Intent intent_show_web = new Intent(Intent.ACTION_VIEW, uri_web);
 
         try{

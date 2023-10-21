@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHolder>{
     Context context;
@@ -22,7 +24,6 @@ public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHold
         this.context = context;
         this.carList = carList;
         this.recyclerViewInterface = recyclerViewInterface;
-
     }
 
     @NonNull
@@ -36,24 +37,17 @@ public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHold
         holder.nameView.setText(carList.get(position).getName());
         holder.priceView.setText(carList.get(position).getPrice());
         holder.makeView.setText(carList.get(position).getYear());
-        holder.imageView.setImageResource(carList.get(position).getImage());
+
+        // Use Glide to load the image into the ImageView
+        Glide.with(context)
+                .load(carList.get(position).getImageUrl()) // Assuming carList stores resource IDs
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
         return carList.size();
-    }
-
-    public String getItem(int id) {
-        if (id >= 0 && id < carList.size()) {
-            Item car = carList.get(id);
-            return "Car Name: " + car.getName() +
-                    "\nYear: " + car.getYear() +
-                    "\nPrice: " + car.getPrice() +
-                    "\nImage Resource ID: " + car.getImage();
-        } else {
-            return "Invalid item ID";
-        }
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{

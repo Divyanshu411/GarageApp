@@ -78,7 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:clickable="true"
-        android:contentDescription="@string/honebutton"
+        android:contentDescription="@string/home_button"
 
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"

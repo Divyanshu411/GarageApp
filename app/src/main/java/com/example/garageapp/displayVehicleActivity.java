@@ -44,143 +44,147 @@ public class displayVehicleActivity extends AppCompatActivity implements Recycle
                 itemList.add(new Item(  getString(R.string.audi_q5),
                         getString(R.string.audi_q5_year),
                         getString(R.string.audi_q5_price),
-                        getResources().getIdentifier(getString(R.string.audi_q5_image), "drawable", getPackageName())));
+                        getString(R.string.audi_q5_image_url)));
                 itemList.add(new Item(getString(R.string.bmw_3_series),
                         getString(R.string.bmw_3_series_year),
                         getString(R.string.bmw_3_series_price),
-                        getResources().getIdentifier(getString(R.string.bmw_3_series_image), "drawable", getPackageName())));
+                        getString(R.string.bmw_3_series_image_url)));
                 itemList.add(new Item(getString(R.string.chevrolet_silverado),
                         getString(R.string.chevrolet_silverado_year),
                         getString(R.string.chevrolet_silverado_price),
-                        getResources().getIdentifier(getString(R.string.chevrolet_silverado_image), "drawable", getPackageName())));
+                        getString(R.string.chevrolet_silverado_image_url)));
                 itemList.add(new Item(getString(R.string.ford_f150_name),
                         getString(R.string.ford_f150_year),
                         getString(R.string.ford_f150_price),
-                        getResources().getIdentifier(getString(R.string.ford_f150_image), "drawable", getPackageName())));
+                        getString(R.string.ford_f150_image_url)));
                 itemList.add(new Item(getString(R.string.honda_civic_name),
                         getString(R.string.honda_civic_year),
                         getString(R.string.honda_civic_price),
-                        getResources().getIdentifier(getString(R.string.honda_civic_image), "drawable", getPackageName())));
+                        getString(R.string.honda_civic_image_url)));
                 itemList.add(new Item(getString(R.string.mercedes_e_class_name),
                         getString(R.string.mercedes_e_class_year),
                         getString(R.string.mercedes_e_class_price),
-                        getResources().getIdentifier(getString(R.string.mercedes_e_class_image), "drawable", getPackageName())));
+                        getString(R.string.mercedes_e_class_image_url)));
+                itemList.add(new Item(getString(R.string.nissan_rogue_name),
+                        getString(R.string.nissan_rogue_year),
+                        getString(R.string.nissan_rogue_price),
+                        getString(R.string.nissan_rogue_image_url)));
                 itemList.add(new Item(getString(R.string.tesla_model3_name),
                         getString(R.string.tesla_model3_year),
                         getString(R.string.tesla_model3_price),
-                        getResources().getIdentifier(getString(R.string.tesla_model3_image), "drawable", getPackageName())));
+                        getString(R.string.tesla_model3_image_url)));
                 itemList.add(new Item(getString(R.string.toyota_camry_name),
                         getString(R.string.toyota_camry_year),
                         getString(R.string.toyota_camry_price),
-                        getResources().getIdentifier(getString(R.string.toyota_camry_image), "drawable", getPackageName())));
+                        getString(R.string.toyota_camry_image_url)));
                 itemList.add(new Item(getString(R.string.volkswagen_golf_name),
                         getString(R.string.volkswagen_golf_year),
                         getString(R.string.volkswagen_golf_price),
-                        getResources().getIdentifier(getString(R.string.volkswagen_golf_image), "drawable", getPackageName())));
+                        getString(R.string.volkswagen_golf_image_url)));
                 break;
             case "Bikes":
                 itemList.add(new Item(
                         getString(R.string.harley_davidson_street_glide_name),
                         getString(R.string.harley_davidson_street_glide_year),
                         getString(R.string.harley_davidson_street_glide_price),
-                        getResources().getIdentifier(getString(R.string.harley_davidson_street_glide_image), "drawable", getPackageName())));
+                        getString(R.string.harley_davidson_street_glide_image_url)));
                 itemList.add(new Item(
                         getString(R.string.bmw_r1250gs_adventure_name),
                         getString(R.string.bmw_r1250gs_adventure_year),
                         getString(R.string.bmw_r1250gs_adventure_price),
-                        getResources().getIdentifier(getString(R.string.bmw_r1250gs_adventure_image), "drawable", getPackageName())));
+                        getString(R.string.bmw_r1250gs_adventure_image_url)));
                 itemList.add(new Item(
                         getString(R.string.ducati_panigale_v4_name),
                         getString(R.string.ducati_panigale_v4_year),
                         getString(R.string.ducati_panigale_v4_price),
-                        getResources().getIdentifier(getString(R.string.ducati_panigale_v4_image), "drawable", getPackageName())));
+                        getString(R.string.ducati_panigale_v4_image_url)));
                 itemList.add(new Item(
                         getString(R.string.honda_gold_wing_name),
                         getString(R.string.honda_gold_wing_year),
                         getString(R.string.honda_gold_wing_price),
-                        getResources().getIdentifier(getString(R.string.honda_gold_wing_image), "drawable", getPackageName())));
+                        getString(R.string.honda_gold_wing_image_url)));
                 itemList.add(new Item(
                         getString(R.string.kawasaki_ninja_zx10r_name),
                         getString(R.string.kawasaki_ninja_zx10r_year),
                         getString(R.string.kawasaki_ninja_zx10r_price),
-                        getResources().getIdentifier(getString(R.string.kawasaki_ninja_zx10r_image), "drawable", getPackageName())));
+                        getString(R.string.kawasaki_ninja_zx10r_image_url)));
                 itemList.add(new Item(
                         getString(R.string.suzuki_hayabusa_name),
                         getString(R.string.suzuki_hayabusa_year),
                         getString(R.string.suzuki_hayabusa_price),
-                        getResources().getIdentifier(getString(R.string.suzuki_hayabusa_image), "drawable", getPackageName())));
+                        getString(R.string.suzuki_hayabusa_image_url)));
                 itemList.add(new Item(
                         getString(R.string.yamaha_yzf_r1_name),
                         getString(R.string.yamaha_yzf_r1_year),
                         getString(R.string.yamaha_yzf_r1_price),
-                        getResources().getIdentifier(getString(R.string.yamaha_yzf_r1_image), "drawable", getPackageName())));
+                        getString(R.string.yamaha_yzf_r1_image_url)));
                 itemList.add(new Item(
                         getString(R.string.triumph_tiger_900_name),
                         getString(R.string.triumph_tiger_900_year),
                         getString(R.string.triumph_tiger_900_price),
-                        getResources().getIdentifier(getString(R.string.triumph_tiger_900_image), "drawable", getPackageName())));
+                        getString(R.string.triumph_tiger_900_image_url)));
                 itemList.add(new Item(
                         getString(R.string.ktm_1290_super_duke_r_name),
                         getString(R.string.ktm_1290_super_duke_r_year),
                         getString(R.string.ktm_1290_super_duke_r_price),
-                        getResources().getIdentifier(getString(R.string.ktm_1290_super_duke_r_image), "drawable", getPackageName())));
+                        getString(R.string.ktm_1290_super_duke_r_image_url)));
                 itemList.add(new Item(
                         getString(R.string.indian_challenger_name),
                         getString(R.string.indian_challenger_year),
                         getString(R.string.indian_challenger_price),
-                        getResources().getIdentifier(getString(R.string.indian_challenger_image), "drawable", getPackageName())));
+                        getString(R.string.indian_challenger_image_url)));
                 break;
             case "Others":
                 itemList.add(new Item(
                         getString(R.string.oil_filter_name),
                         getString(R.string.oil_filter_year),
                         getString(R.string.oil_filter_price),
-                        getResources().getIdentifier(getString(R.string.oil_filter_image), "drawable", getPackageName())));
+                        getString(R.string.oil_filter_image_url)));
                 itemList.add(new Item(
                         getString(R.string.spark_plugs_name),
                         getString(R.string.spark_plugs_year),
                         getString(R.string.spark_plugs_price),
-                        getResources().getIdentifier(getString(R.string.spark_plugs_image), "drawable", getPackageName())));
+                        getString(R.string.spark_plugs_image_url)));
                 itemList.add(new Item(
                         getString(R.string.brake_rotors_name),
                         getString(R.string.brake_rotors_year),
                         getString(R.string.brake_rotors_price),
-                        getResources().getIdentifier(getString(R.string.brake_rotors_image), "drawable", getPackageName())));
+                        getString(R.string.brake_rotors_image_url)));
                 itemList.add(new Item(
                         getString(R.string.air_filter_name),
                         getString(R.string.air_filter_year),
                         getString(R.string.air_filter_price),
-                        getResources().getIdentifier(getString(R.string.air_filter_image), "drawable", getPackageName())));
+                        getString(R.string.air_filter_image_url)));
                 itemList.add(new Item(
                         getString(R.string.ignition_coil_name),
                         getString(R.string.ignition_coil_year),
                         getString(R.string.ignition_coil_price),
-                        getResources().getIdentifier(getString(R.string.ignition_coil_image), "drawable", getPackageName())));
+                        getString(R.string.ignition_coil_image_url)));
                 itemList.add(new Item(
                         getString(R.string.brake_pads_name),
                         getString(R.string.brake_pads_year),
                         getString(R.string.brake_pads_price),
-                        getResources().getIdentifier(getString(R.string.brake_pads_image), "drawable", getPackageName())));
+                        getString(R.string.brake_pads_image_url)));
                 itemList.add(new Item(
                         getString(R.string.chain_name),
                         getString(R.string.chain_year),
                         getString(R.string.chain_price),
-                        getResources().getIdentifier(getString(R.string.chain_image), "drawable", getPackageName())));
+                        getString(R.string.chain_image_url)));
                 itemList.add(new Item(
                         getString(R.string.tire_tubes_name),
                         getString(R.string.tire_tubes_year),
                         getString(R.string.tire_tubes_price),
-                        getResources().getIdentifier(getString(R.string.tire_tubes_image), "drawable", getPackageName())));
+                        getString(R.string.tire_tubes_image_url)));
                 itemList.add(new Item(
                         getString(R.string.pedals_name),
                         getString(R.string.pedals_year),
                         getString(R.string.pedals_price),
-                        getResources().getIdentifier(getString(R.string.pedals_image), "drawable", getPackageName())));
+                        getString(R.string.pedals_image_url)));
                 itemList.add(new Item(
                         getString(R.string.saddle_name),
                         getString(R.string.saddle_year),
                         getString(R.string.saddle_price),
-                        getResources().getIdentifier(getString(R.string.saddle_image), "drawable", getPackageName())));
+                        getString(R.string.saddle_image_url)));
                 break;
         }
         return itemList;
