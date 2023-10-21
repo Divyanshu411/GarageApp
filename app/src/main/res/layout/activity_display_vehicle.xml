@@ -24,6 +24,6 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/home"
-        android:contentDescription="@string/gohome" />
+        android:contentDescription="@string/home_button" />
 
 </RelativeLayout>

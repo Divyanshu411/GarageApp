@@ -45,12 +45,9 @@ public class displayVehicleActivity2 extends AppCompatActivity {
 
         //Floating button - Home
         fab_home = findViewById(R.id.fab_home);
-        fab_home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(displayVehicleActivity2.this, MainActivity.class);
-                startActivity(intent);
-            }
+        fab_home.setOnClickListener(v -> {
+            Intent intent = new Intent(displayVehicleActivity2.this, MainActivity.class);
+            startActivity(intent);
         });
     }
 
