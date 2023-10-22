@@ -26,6 +26,7 @@
     <string name="audi_q5_year">2023</string>
     <string name="audi_q5_price">€45,000</string>
     <string name="audi_q5_image_url">https://rb.gy/1q9ol</string>
+    <string name="audi_q5_ads_url" tools:ignore="TypographyDashes">https://www.audi.ie/ie/web/en/models/q5/q5-2024.html</string>
 
     <string name="bmw_3_series">BMW 3 Series</string>
     <string name="bmw_3_series_year">2019</string>
@@ -127,42 +128,42 @@
     <string name="oil_filter_price">10 euro</string>
     <string name="spark_plugs_name">Spark Plugs</string>
     <string name="spark_plugs_year">2023</string>
-    <string name="spark_plugs_price">7 euro</string>
+    <string name="spark_plugs_price">€7</string>
 
     <string name="brake_rotors_name">Brake Rotors</string>
     <string name="brake_rotors_year">2017</string>
-    <string name="brake_rotors_price">25 euro</string>
+    <string name="brake_rotors_price">€25</string>
 
     <string name="air_filter_name">Air Filter</string>
     <string name="air_filter_year">2018</string>
-    <string name="air_filter_price">12 euro</string>
+    <string name="air_filter_price">€12</string>
 
     <string name="ignition_coil_name">Ignition Coil</string>
     <string name="ignition_coil_year">2020</string>
-    <string name="ignition_coil_price">15 euro</string>
+    <string name="ignition_coil_price">€15</string>
 
     <string name="brake_pads_name">Brake Pads</string>
     <string name="brake_pads_year">2023</string>
-    <string name="brake_pads_price">20 euro</string>
+    <string name="brake_pads_price">€20</string>
 
     <string name="chain_name">Chain</string>
     <string name="chain_year">2021</string>
-    <string name="chain_price">15 euro</string>
+    <string name="chain_price">€15</string>
 
     <string name="tire_tubes_name">Tire Tubes</string>
     <string name="tire_tubes_year">2022</string>
-    <string name="tire_tubes_price">10 euro</string>
+    <string name="tire_tubes_price">€10</string>
 
     <string name="pedals_name">Pedals</string>
     <string name="pedals_year">2019</string>
-    <string name="pedals_price">8 euro</string>
+    <string name="pedals_price">€8</string>
 
     <string name="saddle_name">Saddle</string>
     <string name="saddle_year">2022</string>
-    <string name="saddle_price">25 euro</string>
+    <string name="saddle_price">€25</string>
     <string name="saddle_image">p10</string>
     <string name="itemName">Name</string>
-    <string name="itemimage">ItemImage</string>
+    <string name="itemImage">ItemImage</string>
 
     <!-- Glide -->
     <!-- Bikes -->
@@ -188,4 +189,42 @@
     <string name="tire_tubes_image_url">https://m.media-amazon.com/images/I/518UhA5H9KS.jpg</string>
     <string name="pedals_image_url">https://rb.gy/ugkam</string>
     <string name="saddle_image_url" tools:ignore="TypographyDashes">https://img.freepik.com/premium-photo/leather-seat-vintage-motorcycle-saddle-neo-retro-caferacer-motorbike_100800-20569.jpg</string>
+
+    <!-- Advert link -->
+    <!-- Cars -->
+    <string name="bmw_3_series_ads_url">https://www.bmw.ie/en/all-models/3-series.html</string>
+    <string name="chevrolet_silverado_ads_url">https://www.chevrolet.com/trucks/silverado/1500</string>
+    <string name="ford_f150_ads_url">https://www.ford.com/trucks/f150/</string>
+    <string name="honda_civic_ads_url">https://www.honda.ie/product/167/honda-civic-hybrid</string>
+    <string name="mercedes_e_class_ads_url" tools:ignore="TypographyDashes">https://www.mercedes-benz.ie/passengercars/models/saloon/w213-22-2/overview.html</string>
+    <string name="nissan_rogue_ads_url">https://www.nissanusa.com/vehicles/crossovers-suvs/rogue.html</string>
+    <string name="tesla_model3_ads_url">https://www.tesla.com/en_ie/model3</string>
+    <string name="toyota_camry_ads_url">https://www.toyota.ie/models/camry</string>
+    <string name="volkswagen_golf_ads_url">https://www.volkswagen.ie/en/new-cars/golf.html</string>
+
+    <!-- Bikes -->
+    <string name="harley_davidson_street_glide_ads_url">https://www.harley-davidson.com/ie/en/motorcycles/street-glide-special.html</string>
+    <string name="bmw_r1250gs_adventure_ads_url">https://www.bmw-motorrad.ie/en/models/adventure/r1250gsadventure.html</string>
+    <string name="ducati_panigale_v4_ads_url">https://www.ducati.com/ww/en/bikes/panigale/panigale-v4</string>
+    <string name="honda_gold_wing_ads_url">https://www.honda.co.uk/motorcycles/range/touring/gl1800-gold-wing/overview.html</string>
+    <string name="kawasaki_ninja_zx10r_ads_url">https://www.kawasaki.com/en-us/motorcycle/ninja/supersport/ninja-zx-10r</string>
+    <string name="suzuki_hayabusa_ads_url">https://bikes.suzuki.co.uk/bikes/sport/hayabusa/</string>
+    <string name="yamaha_yzf_r1_ads_url">https://megabikes.ie/yamaha-yzf-r1</string>
+    <string name="triumph_tiger_900_ads_url">https://www.triumph.ie/triumph-motorcycles/adventure/tiger-900-gt</string>
+    <string name="ktm_1290_super_duke_r_ads_url">https://www.ktm.com/en-us/models/naked-bike/2023-ktm-1290-superdukerevo.html</string>
+    <string name="indian_challenger_ads_url">https://www.indianmotorcycle.com/en-us/challenger/</string>
+
+    <!-- Other -->
+    <string name="oil_filter_ads_url">https://www.mister-auto.ie/oil-filter/</string>
+    <string name="spark_plugs_ads_url">https://www.mister-auto.ie/spark-plugs/</string>
+    <string name="brake_rotors_ads_url">https://www.car-parts.ie/car-parts/brake-discs</string>
+    <string name="air_filter_ads_url">https://www.car-parts.ie/car-parts/master-sport/p-9404199</string>
+    <string name="ignition_coil_ads_url">https://www.car-parts.ie/car-parts/japanparts/p-2157955</string>
+    <string name="brake_pads_ads_url">https://www.car-parts.ie/car-parts/jpn/p-17789932</string>
+    <string name="chain_ads_url">https://www.car-parts.ie/car-parts/rk/p-15229232</string>
+    <string name="tire_tubes_ads_url">https://www.halfords.ie/cycling/inner-tubes/</string>
+    <string name="pedals_ads_url">https://www.halfords.ie/cycling/pedals-pegs/</string>
+    <string name="saddle_ads_url">https://www.xlmoto.ie/product/snell-clanton-seat-black_pid-PIA-37652</string>
+
+
 </resources>
