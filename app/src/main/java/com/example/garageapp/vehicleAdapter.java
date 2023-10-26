@@ -16,13 +16,13 @@ import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHolder>{
     Context context;
-    private final List<Item> carList;
+    private final List<Item> itemList;
     private final RecyclerViewInterface recyclerViewInterface;
 
     //Constructor
-    public vehicleAdapter(Context context, List<Item> carList, RecyclerViewInterface recyclerViewInterface) {
+    public vehicleAdapter(Context context, List<Item> itemList, RecyclerViewInterface recyclerViewInterface) {
         this.context = context;
-        this.carList = carList;
+        this.itemList = itemList;
         this.recyclerViewInterface = recyclerViewInterface;
     }
 
@@ -34,20 +34,20 @@ public class vehicleAdapter extends RecyclerView.Adapter<vehicleAdapter.ViewHold
     }
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.nameView.setText(carList.get(position).getName());
-        holder.priceView.setText(carList.get(position).getPrice());
-        holder.makeView.setText(carList.get(position).getYear());
+        holder.nameView.setText(itemList.get(position).getName());
+        holder.priceView.setText(itemList.get(position).getPrice());
+        holder.makeView.setText(itemList.get(position).getYear());
 
         // Use Glide to load the image into the ImageView
         Glide.with(context)
-                .load(carList.get(position).getImageUrl()) // Assuming carList stores resource IDs
+                .load(itemList.get(position).getImageUrl()) // Assuming carList stores resource IDs
                 .transition(DrawableTransitionOptions.withCrossFade())
                 .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
-        return carList.size();
+        return itemList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{

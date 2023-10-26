@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".displayVehicleActivity">
+    tools:context=".displayVehicleActivity"
+    android:background="@drawable/bg">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/carRecyclerView"
@@ -24,6 +25,7 @@
         android:clickable="true"
         android:focusable="true"
         android:src="@drawable/home"
-        android:contentDescription="@string/home_button" />
+        android:contentDescription="@string/home_button"
+        android:backgroundTint="@color/orange"/>
 
 </RelativeLayout>

@@ -22,6 +22,7 @@ public class displayVehicleActivity2 extends AppCompatActivity {
 
         Item clickedItem = (Item) getIntent().getSerializableExtra("clicked_item");
 
+        assert clickedItem != null;
         String itemName = clickedItem.getName();
         String itemYear = clickedItem.getYear();
         String itemPrice = clickedItem.getPrice();

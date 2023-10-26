@@ -20,6 +20,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_car3">carActivity3</string>
     <string name="title_activity_car_navigation">carNavigation</string>
+    <string name="itemimage">itemImage</string>
 
     //Cars
     <string name="audi_q5">Audi Q5</string>
@@ -225,6 +226,7 @@
     <string name="tire_tubes_ads_url">https://www.halfords.ie/cycling/inner-tubes/</string>
     <string name="pedals_ads_url">https://www.halfords.ie/cycling/pedals-pegs/</string>
     <string name="saddle_ads_url">https://www.xlmoto.ie/product/snell-clanton-seat-black_pid-PIA-37652</string>
+
 
 
 </resources>

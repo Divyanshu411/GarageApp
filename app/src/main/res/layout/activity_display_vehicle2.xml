@@ -5,58 +5,59 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg02"
     android:gravity="center"
     tools:context=".displayVehicleActivity2">
 
     <TextView
         android:id="@+id/itemNameView"
-        android:layout_width="347dp"
+        android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="31dp"
-        android:layout_marginTop="37dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="65dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="273dp"
         android:gravity="center"
         android:text="@string/itemName"
         android:textSize="32sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/itemPriceView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemImageView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/itemYearView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="66dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
         android:text="@string/year"
         android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/itemNameView"
         app:layout_constraintTop_toBottomOf="@+id/itemNameView" />
 
     <TextView
         android:id="@+id/itemPriceView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="227dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
         android:text="@string/price"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemNameView" />
 
     <ImageView
         android:id="@+id/itemImageView"
         android:layout_width="0dp"
-        android:layout_height="493dp"
-
-        android:layout_marginTop="16dp"
+        android:layout_height="538dp"
+        android:layout_marginBottom="60dp"
         android:contentDescription="@string/car_image_displayed"
+        app:layout_constraintBottom_toTopOf="@+id/itemNameView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -70,27 +71,29 @@
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/back"
+        android:backgroundTint="@color/orange"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+
         android:clickable="true"
         android:contentDescription="@string/home_button"
-
         android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/home" />
+        app:srcCompat="@drawable/home"
+        android:backgroundTint="@color/orange"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_ads"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="31dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:contentDescription="@string/gotoads"
@@ -98,6 +101,7 @@
         android:onClick="action_ads"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/eye" />
+        app:srcCompat="@drawable/eye"
+        android:backgroundTint="@color/orange"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
